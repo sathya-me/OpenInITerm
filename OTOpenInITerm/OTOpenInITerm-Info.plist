@@ -9,7 +9,7 @@
 	<key>CFBundleIconFile</key>
 	<string></string>
 	<key>CFBundleIdentifier</key>
-	<string>me.sathya.openinterminal</string>
+	<string>me.sathya.openiniterm</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -35,7 +35,9 @@
 		<string>7FDF5C7A-131F-4ABB-9EDC-8C5F8F0B8A90</string>
 	</array>
 	<key>NSPrincipalClass</key>
-	<string>OTOpenInTerminal</string>
+	<string>OTOpenInITerm</string>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
 	<key>XC4Compatible</key>
 	<true/>
 	<key>XC5Compatible</key>

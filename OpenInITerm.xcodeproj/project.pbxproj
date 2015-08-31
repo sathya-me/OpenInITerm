@@ -7,27 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5C176502192A538900F9E448 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 5C176501192A538900F9E448 /* LICENSE */; };
-		5C176504192A538F00F9E448 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5C176503192A538F00F9E448 /* README.md */; };
 		5C17651C192A58FE00F9E448 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C17651B192A58FE00F9E448 /* Cocoa.framework */; };
 		5C99D966191E666F005DCDE4 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C99D965191E666F005DCDE4 /* AppKit.framework */; };
 		5C99D968191E666F005DCDE4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C99D967191E666F005DCDE4 /* Foundation.framework */; };
-		5C99D96E191E666F005DCDE4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5C99D96C191E666F005DCDE4 /* InfoPlist.strings */; };
-		5C99D971191E666F005DCDE4 /* OTOpenInTerminal.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C99D970191E666F005DCDE4 /* OTOpenInTerminal.m */; };
+		91E0B5531B94551600FF7F9C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 91E0B54D1B94551600FF7F9C /* InfoPlist.strings */; };
+		91E0B5551B94551600FF7F9C /* OTOpenInITerm.m in Sources */ = {isa = PBXBuildFile; fileRef = 91E0B5521B94551600FF7F9C /* OTOpenInITerm.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5C176501192A538900F9E448 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
-		5C176503192A538F00F9E448 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
 		5C17651B192A58FE00F9E448 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		5C99D962191E666F005DCDE4 /* OpenInTerminal.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenInTerminal.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C99D962191E666F005DCDE4 /* OTOpenInITerm.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OTOpenInITerm.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C99D965191E666F005DCDE4 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		5C99D967191E666F005DCDE4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		5C99D96B191E666F005DCDE4 /* OpenInTerminal-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OpenInTerminal-Info.plist"; sourceTree = "<group>"; };
-		5C99D96D191E666F005DCDE4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		5C99D96F191E666F005DCDE4 /* OTOpenInTerminal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OTOpenInTerminal.h; sourceTree = "<group>"; };
-		5C99D970191E666F005DCDE4 /* OTOpenInTerminal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OTOpenInTerminal.m; sourceTree = "<group>"; };
-		5C99D972191E666F005DCDE4 /* OpenInTerminal-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OpenInTerminal-Prefix.pch"; sourceTree = "<group>"; };
+		91E0B54E1B94551600FF7F9C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		91E0B54F1B94551600FF7F9C /* OTOpenInITerm-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "OTOpenInITerm-Info.plist"; sourceTree = "<group>"; };
+		91E0B5501B94551600FF7F9C /* OTOpenInITerm-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OTOpenInITerm-Prefix.pch"; sourceTree = "<group>"; };
+		91E0B5511B94551600FF7F9C /* OTOpenInITerm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTOpenInITerm.h; sourceTree = "<group>"; };
+		91E0B5521B94551600FF7F9C /* OTOpenInITerm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTOpenInITerm.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,7 +43,7 @@
 		5C99D959191E666E005DCDE4 = {
 			isa = PBXGroup;
 			children = (
-				5C99D969191E666F005DCDE4 /* OpenInTerminal */,
+				91E0B54C1B94551600FF7F9C /* OTOpenInITerm */,
 				5C99D964191E666F005DCDE4 /* Frameworks */,
 				5C99D963191E666F005DCDE4 /* Products */,
 			);
@@ -56,7 +52,7 @@
 		5C99D963191E666F005DCDE4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5C99D962191E666F005DCDE4 /* OpenInTerminal.xcplugin */,
+				5C99D962191E666F005DCDE4 /* OTOpenInITerm.xcplugin */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,34 +67,32 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		5C99D969191E666F005DCDE4 /* OpenInTerminal */ = {
+		91E0B54C1B94551600FF7F9C /* OTOpenInITerm */ = {
 			isa = PBXGroup;
 			children = (
-				5C99D96F191E666F005DCDE4 /* OTOpenInTerminal.h */,
-				5C99D970191E666F005DCDE4 /* OTOpenInTerminal.m */,
-				5C99D96A191E666F005DCDE4 /* Supporting Files */,
+				91E0B5511B94551600FF7F9C /* OTOpenInITerm.h */,
+				91E0B5521B94551600FF7F9C /* OTOpenInITerm.m */,
+				91E0B5561B94552900FF7F9C /* SupportingFiles */,
 			);
-			path = OpenInTerminal;
+			path = OTOpenInITerm;
 			sourceTree = "<group>";
 		};
-		5C99D96A191E666F005DCDE4 /* Supporting Files */ = {
+		91E0B5561B94552900FF7F9C /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
-				5C176503192A538F00F9E448 /* README.md */,
-				5C176501192A538900F9E448 /* LICENSE */,
-				5C99D96B191E666F005DCDE4 /* OpenInTerminal-Info.plist */,
-				5C99D96C191E666F005DCDE4 /* InfoPlist.strings */,
-				5C99D972191E666F005DCDE4 /* OpenInTerminal-Prefix.pch */,
+				91E0B54D1B94551600FF7F9C /* InfoPlist.strings */,
+				91E0B54F1B94551600FF7F9C /* OTOpenInITerm-Info.plist */,
+				91E0B5501B94551600FF7F9C /* OTOpenInITerm-Prefix.pch */,
 			);
-			name = "Supporting Files";
+			name = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5C99D961191E666E005DCDE4 /* OpenInTerminal */ = {
+		5C99D961191E666E005DCDE4 /* OTOpenInITerm */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5C99D975191E666F005DCDE4 /* Build configuration list for PBXNativeTarget "OpenInTerminal" */;
+			buildConfigurationList = 5C99D975191E666F005DCDE4 /* Build configuration list for PBXNativeTarget "OTOpenInITerm" */;
 			buildPhases = (
 				5C99D95E191E666E005DCDE4 /* Sources */,
 				5C99D95F191E666E005DCDE4 /* Frameworks */,
@@ -108,9 +102,9 @@
 			);
 			dependencies = (
 			);
-			name = OpenInTerminal;
+			name = OTOpenInITerm;
 			productName = OpenInTerminal;
-			productReference = 5C99D962191E666F005DCDE4 /* OpenInTerminal.xcplugin */;
+			productReference = 5C99D962191E666F005DCDE4 /* OTOpenInITerm.xcplugin */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -123,7 +117,7 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "http://sathya.me";
 			};
-			buildConfigurationList = 5C99D95D191E666E005DCDE4 /* Build configuration list for PBXProject "OpenInTerminal" */;
+			buildConfigurationList = 5C99D95D191E666E005DCDE4 /* Build configuration list for PBXProject "OpenInITerm" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -135,7 +129,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5C99D961191E666E005DCDE4 /* OpenInTerminal */,
+				5C99D961191E666E005DCDE4 /* OTOpenInITerm */,
 			);
 		};
 /* End PBXProject section */
@@ -145,9 +139,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C176504192A538F00F9E448 /* README.md in Resources */,
-				5C176502192A538900F9E448 /* LICENSE in Resources */,
-				5C99D96E191E666F005DCDE4 /* InfoPlist.strings in Resources */,
+				91E0B5531B94551600FF7F9C /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,17 +150,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C99D971191E666F005DCDE4 /* OTOpenInTerminal.m in Sources */,
+				91E0B5551B94551600FF7F9C /* OTOpenInITerm.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		5C99D96C191E666F005DCDE4 /* InfoPlist.strings */ = {
+		91E0B54D1B94551600FF7F9C /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				5C99D96D191E666F005DCDE4 /* en */,
+				91E0B54E1B94551600FF7F9C /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -252,8 +244,8 @@
 				DSTROOT = "$(HOME)";
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "OpenInTerminal/OpenInTerminal-Prefix.pch";
-				INFOPLIST_FILE = "OpenInTerminal/OpenInTerminal-Info.plist";
+				GCC_PREFIX_HEADER = "OTOpenInITerm/OTOpenInITerm-Prefix.pch";
+				INFOPLIST_FILE = "OTOpenInITerm/OTOpenInITerm-Info.plist";
 				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -269,8 +261,8 @@
 				DSTROOT = "$(HOME)";
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "OpenInTerminal/OpenInTerminal-Prefix.pch";
-				INFOPLIST_FILE = "OpenInTerminal/OpenInTerminal-Info.plist";
+				GCC_PREFIX_HEADER = "OTOpenInITerm/OTOpenInITerm-Prefix.pch";
+				INFOPLIST_FILE = "OTOpenInITerm/OTOpenInITerm-Info.plist";
 				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -281,7 +273,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5C99D95D191E666E005DCDE4 /* Build configuration list for PBXProject "OpenInTerminal" */ = {
+		5C99D95D191E666E005DCDE4 /* Build configuration list for PBXProject "OpenInITerm" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5C99D973191E666F005DCDE4 /* Debug */,
@@ -290,7 +282,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5C99D975191E666F005DCDE4 /* Build configuration list for PBXNativeTarget "OpenInTerminal" */ = {
+		5C99D975191E666F005DCDE4 /* Build configuration list for PBXNativeTarget "OTOpenInITerm" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5C99D976191E666F005DCDE4 /* Debug */,

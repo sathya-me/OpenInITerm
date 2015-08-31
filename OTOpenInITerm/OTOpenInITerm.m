@@ -1,25 +1,25 @@
 //
-//  OTOpenInTerminal.m
-//  OTOpenInTerminal
+//  OTOpenInITerm.m
+//  OTOpenInITerm
 //
 //  Created by Sathya Narayanan p on 10/05/14.
-//  Copyright (c) 2014 http://sathya.me. All rights reserved.
+//  Copyright (c) 2015 http://sathya.me. All rights reserved.
 //
 
 
-#import "OTOpenInTerminal.h"
+#import "OTOpenInITerm.h"
 
-static OTOpenInTerminal *sharedPlugin;
+static OTOpenInITerm *sharedPlugin;
 static NSArray *supportFileFormats = nil;
 
-@interface OTOpenInTerminal()
+@interface OTOpenInITerm ()
 
 @property (nonatomic, strong) NSBundle *bundle;
-@property (nonatomic, strong) NSMenuItem *openInTerminalButton;
+@property (nonatomic, strong) NSMenuItem *openInITermButton;
 
 @end
 
-@implementation OTOpenInTerminal
+@implementation OTOpenInITerm
 
 + (void)pluginDidLoad:(NSBundle *)plugin
 {
@@ -60,15 +60,15 @@ static NSArray *supportFileFormats = nil;
     if (menuItem) {
         [[menuItem submenu] addItem:[NSMenuItem separatorItem]];
         
-        NSString *title = @"Reveal in Terminal";
-        _openInTerminalButton = [[NSMenuItem alloc] initWithTitle:title
+        NSString *title = @"Reveal in iTerm";
+        _openInITermButton = [[NSMenuItem alloc] initWithTitle:title
                                                            action:@selector(openProject)
-                                                    keyEquivalent:@"t"];
+                                                    keyEquivalent:@"I"];
         
-        self.openInTerminalButton.keyEquivalentModifierMask = NSCommandKeyMask | NSAlternateKeyMask;
+        self.openInITermButton.keyEquivalentModifierMask = NSCommandKeyMask | NSAlternateKeyMask;
         
-        [self.openInTerminalButton setTarget:self];
-        [[menuItem submenu] insertItem:self.openInTerminalButton atIndex:3];
+        [self.openInITermButton setTarget:self];
+        [[menuItem submenu] insertItem:self.openInITermButton atIndex:3];
     }
 }
 
@@ -78,20 +78,28 @@ static NSArray *supportFileFormats = nil;
     
     NSString *directoryPath = [self getProjectDirectoryFromWorksapcePath:filePath];
     
-    [self openProjectInTerminal:directoryPath];
+    [self openProjectInITerm:directoryPath];
 }
 
-- (void)openProjectInTerminal:(NSString *)projectPath
+- (void)openProjectInITerm:(NSString *)projectPath
 {
-    if(projectPath)
-    {
-        [NSTask launchedTaskWithLaunchPath:@"/usr/bin/open" arguments:@[@"-a", @"/Applications/Utilities/Terminal.app", projectPath]];
+    if(projectPath) {
+
+        NSString *itermPath = @"/Applications/iTerm.app";
+
+        NSString *terminalAppPath = @"/Applications/Utilities/Terminal.app";
+        
+        if([[[NSFileManager alloc] init] fileExistsAtPath:itermPath]){
+            terminalAppPath = itermPath;
+        }
+        
+        [NSTask launchedTaskWithLaunchPath:@"/usr/bin/open" arguments:@[@"-a", terminalAppPath, projectPath]];
     }
 }
 
 - (BOOL)validateMenuItem:(NSMenuItem *)menuItem
 {
-    if (menuItem == self.openInTerminalButton) {
+    if (menuItem == self.openInITermButton) {
         
         NSString *projectExtension = [self getProjectExtension];
         
